@@ -1,0 +1,9 @@
+---
+tasks:
+- id: 1
+  title: Do some stuff
+  description: It's really important that this stuff gets done
+- id: 2
+  title: Do some stuff
+  description: It's really important that this stuff gets done
+total: 2
