@@ -1,6 +1,15 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
-</form>
+<div class='container-fluid row text-center'>
+  <form action="/tasks" method="post">
+    <div class='container-fluid navbar navbar-default'>
+      <a class='nav navbar-nav navbar-link navbar-btn navbar-brand' href="/tasks">Back</a>
+    </div>
+    <div class="container-fluid">
+      <div class='row well'>
+        <h1>Enter a new task:</h1>
+        <input class='input-lg' type='text' name='task[title]'/><br/><br>
+        <textarea class='input-lg' name='task[description]'></textarea><br/>
+        <input class='btn btn-xs btn-success' type='submit'/>
+      </div>
+    </div>
+  </form>
+</div>

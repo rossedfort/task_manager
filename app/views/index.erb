@@ -1,5 +1,14 @@
-<h1>All Tasks</h1>
+<div class='container-fluid'>
+  <div class='container-fluid navbar navbar-default'>
+    <a class='container-fluid navbar navbar-brand navbar-link nav navbar-nav' href="/">Back</a>
+    <a class='container-fluid navbar navbar-brand navbar-link nav navbar-nav' href="/tasks/new">New</a>
+  </div>
 
-<% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+  <div class='well text-center'>
+    <h1>All Tasks</h1>
+
+    <% @tasks.each do |task| %>
+      <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+    <% end %>
+  </div>
+</div>

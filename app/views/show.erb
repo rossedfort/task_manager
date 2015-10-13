@@ -1,5 +1,11 @@
-<a href="/tasks">Task Index</a>
+<div class='container-fluid navbar navbar-default'>
+  <a class='nav navbar-nav navbar-link navbar-btn navbar-brand' href="/tasks">Task Index</a>
+</div>
 
-<h1><%= @task.title %></h1>
+<div class="container-fluid">
+  <div class="row well text-center">
+    <h1><%= @task.title %></h1>
 
-<p><%= @task.description %></p>
+    <p><%= @task.description %></p>
+  </div>
+</div>
