@@ -1,0 +1,16 @@
+<div class='container-fluid row text-center'>
+  <form action="/tasks/<%=  @task.id%>" method="post">
+    <div class='container-fluid navbar navbar-default'>
+      <a class='nav navbar-nav navbar-link navbar-btn navbar-brand' href="/tasks">Back</a>
+    </div>
+    <div class="container-fluid">
+      <div class='row well'>
+        <h1>Edit Your Task:</h1>
+        <input type="hidden" name="_method" value="PUT"/>
+        <input class='input-lg' type='text' name='task[title]' value="<%= @task.title %>"/><br/><br>
+        <textarea class='input-lg' name='task[description]'><%= @task.description %></textarea><br/>
+        <input class='btn btn-xs btn-success' type='submit'/>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,12 +1,6 @@
 ---
 tasks:
-- id: 1
-  title: Finish Task Manager
-  description: I still need to add bootstrap
-- id: 2
-  title: Do some stuff
-  description: It's really important that this stuff gets done
-- id: 3
-  title: Do some more stuff
-  description: It's also really important that this stuff gets done
-total: 3
+- id: 5
+  title: CRUD Homework
+  description: Robot World
+total: 5
