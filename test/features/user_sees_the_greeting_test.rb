@@ -3,9 +3,10 @@ require_relative '../test_helper'
 class GreetingTest < FeatureTest
   def test_user_sees_the_greeting
     visit '/'
+    assert_equal '/', current_path
 
     within('#greeting') do
-      page.has_content?('Welcome to the Task Manager!')
+      assert page.has_content?('Welcome to the Task Manager!')
     end
   end
 end
