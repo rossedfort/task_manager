@@ -1,6 +1,3 @@
 ---
-tasks:
-- id: 5
-  title: CRUD Homework
-  description: Robot World
-total: 5
+tasks: []
+total: 6
