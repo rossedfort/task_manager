@@ -46,18 +46,6 @@ class TaskManagerTest < Minitest::Test
   end
 
   def test_all_tasks_can_be_returned
-    skip
-    TaskManager.create({:title       => "task",
-                        :description => "stuff"})
 
-    TaskManager.create({:title       => "another task",
-                        :description => "more stuff"})
-
-    task_one = TaskManager.find(1)
-    task_two = TaskManager.find(2)
-
-    expected = [task_one, task_two]
-
-    assert_equal expected, TaskManager.all
   end
 end
