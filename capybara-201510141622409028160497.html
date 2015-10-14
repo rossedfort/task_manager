@@ -1,4 +1,13 @@
-<div class='container-fluid'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/application.css">
+  <title>Task Manager</title>
+</head>
+<body>
+  <div class="container background-image">
+    <div class='container-fluid'>
   <div class='container-fluid navbar navbar-default'>
     <a class='container-fluid navbar navbar-brand navbar-link nav navbar-nav' href="/">Back</a>
     <a class='container-fluid navbar navbar-brand navbar-link nav navbar-nav' href="/tasks/new">New</a>
@@ -7,13 +16,17 @@
   <div class='well text-center'>
     <h1>All Tasks</h1>
 
-    <% @tasks.each do |task| %>
-      <h3 id="task"><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-      <a href="/tasks/<%= task.id %>/edit" class="btn btn-info" role="button">Edit</a>
-      <form action="/tasks/<%= task.id %>" method="POST">
+    
+      <h3 id="task">1: <a href="/tasks/1">task</a></h3>
+      <a href="/tasks/1/edit" class="btn btn-info" role="button">Edit</a>
+      <form action="/tasks/1" method="POST">
         <input type="hidden" name="_method" value="Delete">
         <input class="btn btn-warning" type="submit" value="Delete"/>
       </form>
-    <% end %>
+    
   </div>
 </div>
+
+  </div>
+</body>
+</html>
