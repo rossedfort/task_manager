@@ -1,3 +1,6 @@
 ---
-tasks: []
-total: 6
+tasks:
+- id: 7
+  title: Stuff
+  description: Do it
+total: 7
