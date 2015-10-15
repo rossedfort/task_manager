@@ -11,8 +11,10 @@ class CreateTest < FeatureTest
 
     assert_equal '/tasks', current_path
 
-    within ('#task') do
-      assert page.has_content?('Task Title')
-    end
+    assert page.has_content?('Task Title')
+
+    visit '/tasks/1'
+    assert page.has_content?('Task Title')
+    assert page.has_content?('Task Description')
   end
 end
